@@ -1,0 +1,17 @@
+<!DOCTYPE>
+<html>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./test.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        // 开始写 jQuery 代码...
+        window.loadPage = function(url) {
+          $.get(url, function(page, status) {
+            console.log("page: " + page + "status:" + status);
+            //$('html').replace(page);
+            document.write(page)
+          });
+        };
+      });
+    </script>
+</html>

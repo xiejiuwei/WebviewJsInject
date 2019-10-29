@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+
+  </head>
+  <body>
+  <script type="text/javascript">
+      console.log("开始初始化js")
+      var mp = new MediaPlayer();
+      var NativePlayerInstanceID = mp.getNativePlayerInstanceID(); //读取本地的媒体播放实例的标识
+      mp.setNativeUIFlag(0);
+      mp.setMuteUIFlag(0);
+      mp.setAudioVolumeUIFlag(0);
+      mp.setAudioTrackUIFlag(0);
+      mp.setProgressBarUIFlag(0);
+      mp.setChannelNoUIFlag(0);
+
+      mp.setVideoDisplayMode(1);
+      mp.setAllowTrickmodeFlag(0); //允许快进退
+      mp.refreshVideoDisplay();
+    </script>
+    <div id="EPG">
+        这是一个 H5
+    </div>
+  </body>
+</html>
